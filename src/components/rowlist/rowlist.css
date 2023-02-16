@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 150px;
+}
+
+.List {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  gap: none;
+}
+
+.List>* {
+  border: 1px solid #fff;
+}
+
+.List__title {
+  font-size: 28px;
+}

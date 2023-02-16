@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #004A87;
+  padding: 10px;
+}
+
+.header__menuHamburguesaContainer {
+  position: relative;
+  display: none;
+}
+
+.header__menuHamburguesa {
+  position: absolute;
+  display: none;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header__nav__container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav__title {
+  text-transform: uppercase;
+}
+
+.header__nav__logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.header__nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+}
+
+.header__nav__list__element,
+.header__nav__list__element a {
+  font-size: 16px;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.header__nav__list__element:hover {
+  background-color: rgba(227 227 227 / 0.2);
+}
+
+@media (max-width: 900px) {
+  .header {
+    font-size: 16px;
+    width: 100vw;
+    flex-direction: row-reverse;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__menuHamburguesaContainer {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    top: 1;
+    left: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__menuHamburguesa {
+
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+  }
+
+  .header__nav__container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container--logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  .element--invisible {
+    display: none;
+  }
+
+  .header__nav__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

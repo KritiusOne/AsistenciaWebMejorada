@@ -1,0 +1,62 @@
+.container--inicio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  max-width: 1200px;
+}
+
+.profesor--info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.profesor--info__img {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 230px;
+}
+
+.profesor--cursos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.cursos {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+.Link--Alumnos {
+  border-radius: 5px;
+  padding: 10px 5px;
+  background-color: #373;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 920px) {
+  .cursos {
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .cursos {
+    gap: 20px;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+}
